@@ -1,0 +1,64 @@
+.title{
+    grid-area: title;
+    text-align: center;
+}
+.header{
+    vertical-align: text-bottom;
+    grid-area: header;}
+.panada{
+    width: 80%;
+    grid-area: panada;}
+.plung{
+    width: 80%;
+    grid-area: plung;}
+.ms{grid-area: ms;}
+.mr{grid-area: mr;}
+.body{grid-area: body;}
+.ip{grid-area: ip;}
+.ipbody{grid-area: ipbody;}
+.img{
+    width: 100%;
+    grid-area: img;
+    box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.27);
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+p{
+    line-height: 1.7em;
+    font-weight: lighter;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-areas:
+    'title title title title panada plung'
+    'header header header header panada plung'
+    'header header header header ms mr'
+    'body body body body body body'
+    'ip ip ip ip img img'
+    'ipbody ipbody ipbody ipbody img img';
+    grid-gap: 10px;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+  /*phone*/
+  @media (max-width: 426px) {
+    .grid-wrapper{
+        grid-template-areas:
+        'title title title title title title'
+        'header header header header header header'
+        'panada panada panada plung plung plung'
+        'ms ms ms mr mr mr'
+        'body body body body body body'
+        'ip ip ip ip ip ip'
+        'img img img img img img'
+        'ipbody ipbody ipbody ipbody ipbody ipbody'
+        ;
+    }
+}

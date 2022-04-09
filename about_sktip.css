@@ -1,0 +1,130 @@
+/*===========================================================
+                        vision
+===========================================================*/
+.vision {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.vision p {
+  font-size: 1.1em;
+}
+
+/*===========================================================
+                        mission
+===========================================================*/
+.mission {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5%;
+}
+
+h1.mission {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 10px;
+}
+
+.textmission {
+  text-align: start;
+  margin: 1em;
+}
+
+.textmission ul {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 5px;
+  list-style-type: disc;
+  display: list-item;
+  font-size: 1.1em;
+  font-weight: 200;
+}
+
+.picmission {
+  padding: 1em;
+}
+
+.picmission img {
+  width: 100%;
+  border-radius: 1em;
+  border: solid #afafaf;
+}
+/*===========================================================
+                        goals
+===========================================================*/
+.goals {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5%;
+}
+
+h1.goals {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 10px;
+}
+
+.textgoals {
+  text-align: start;
+  margin: 1em;
+}
+
+.textgoals ul {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 5px;
+  list-style-type: disc;
+  display: list-item;
+  font-size: 1.1em;
+  font-weight: 200;
+}
+
+.picgoals {
+  padding: 1em;
+}
+
+.picgoals img {
+  width: 100%;
+  border-radius: 1em;
+  border: solid #afafaf;
+}
+
+/*======================================================
+                    Responsive ipad
+  ======================================================*/
+@media (max-width: 768px) {
+  .textmission {
+    grid-area: textmission;
+  }
+  .picmission {
+    grid-area: picmission;
+  }
+  .mission {
+    grid-template:
+      "picmission"
+      "textmission";
+  }
+  .textgoals {
+    grid-area: textgoals;
+  }
+  .picgoals {
+    grid-area: picgoals;
+  }
+  .goals {
+    grid-template:
+      "picgoals"
+      "textgoals";
+  }
+}

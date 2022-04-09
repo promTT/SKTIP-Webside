@@ -1,0 +1,98 @@
+.content{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%
+}
+
+.item{
+    margin-top: 3%;
+    text-align: start;
+    background-color: #D1D6E4;
+    padding: 3em;
+}
+
+.item ol{
+    list-style-type: lower-alpha;
+    margin-left: 3em;
+}
+
+.item h2{
+    line-height: 2em;
+}
+
+.item p,.item ol{
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+#red{
+    color: red;
+}
+
+h3{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.step{
+    position: relative;
+}
+
+.step img{
+    width: 100%;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.curriculum{
+    position: absolute;
+    display: grid;
+    padding: 2em;
+    margin: auto;
+    margin-top: 3%;
+    background-color: #E9DB89;
+    border-radius: 1em;
+    grid-gap: 1em;
+    bottom: 340px;
+    left: 140px;
+    grid-template: repeat(2, 1fr);
+    width: 40%;
+}
+
+.curriculum img{
+    width: 70%;
+    margin: auto;
+}
+
+.curriculum a{
+    color: #FF4040;
+    text-decoration: underline;
+    line-height: 1.5em;
+    grid-column: 1/ span 2;
+}
+
+@media (max-width: 768px) {
+    .curriculum{
+        width: 60%;
+        bottom: 135px;
+        left: 30px;
+        font-size: 0.7em;
+    }
+    .item{
+        font-size: 0.7em;
+    }
+}
+  /*phone*/
+  @media (max-width: 426px) {
+    .curriculum{
+        width: 60%;
+        bottom: 75px;
+        left: 20px;
+        font-size: 0.4em;
+    }
+}

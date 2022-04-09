@@ -1,0 +1,80 @@
+.content{
+    max-width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.gridwrapper{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    margin-top: 1em;
+    margin-bottom: 3%;
+    grid-column-gap: 0.5em;
+}
+
+.item{
+    padding-bottom: 30%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: #ffffff;
+    line-height: 2em;
+    border: 0px;
+    box-shadow: none;
+}
+
+.bottom{
+    border-radius: 0em 0em 1em 1em;
+    -webkit-border-radius: 0em 0em 1em 1em;
+    -moz-border-radius: 0em 0em 1em 1em;
+    -ms-border-radius: 0em 0em 1em 1em;
+    -o-border-radius: 0em 0em 1em 1em;
+}
+
+.top{
+    border-radius: 1em 1em 0em 0em;
+    -webkit-border-radius: 1em 1em 0em 0em;
+    -moz-border-radius: 1em 1em 0em 0em;
+    -ms-border-radius: 1em 1em 0em 0em;
+    -o-border-radius: 1em 1em 0em 0em;
+}
+
+.bottom img, .top img{
+    width: 10%;
+}
+#cambridge{
+    background-color: #F2BF5E;
+}
+
+#lowersec{
+    background-color: #FF6161;
+}
+
+#support{
+    background-color: #536EB7;
+}
+
+#teacher{
+    background-color: #75CBA8;
+}
+
+@media (max-width: 768px) {
+    .gridwrapper {
+        grid-template-columns:  1fr 1fr;
+        grid-gap: 1em;
+    }
+    .item{
+        border-radius: 1em;
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        -ms-border-radius: 1em;
+        -o-border-radius: 1em;
+    }
+}
+  /*phone*/
+  @media (max-width: 426px) {
+    .gridwrapper {
+        grid-template-columns: 1fr;
+    }
+}

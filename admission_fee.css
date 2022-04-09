@@ -1,0 +1,44 @@
+.content{
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.content h1{
+    margin-bottom: 3%;
+}
+
+.item{
+    color: #343F64;
+    text-align: start;
+    padding: 2em;
+    background-color: #D1D6E4;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    font-size: 1.2em;
+    margin-bottom: 3%;
+}
+
+.item ul{
+    margin-top: 0.5em;
+    margin-left: 3em;
+}
+
+#gray{
+    background-color: #E6E6E6;
+}
+
+#gray h3, #gary h2{
+    margin-top: 3%;
+}
+
+@media (max-width: 768px) {
+    .item{
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,22 @@
+.content{
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#red{
+    color: red;
+    margin: 1em;
+}
+
+.content img{
+    width: 100%;
+    margin: 1em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}

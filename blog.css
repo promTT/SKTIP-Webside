@@ -1,0 +1,75 @@
+.title {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+.blog {
+  max-width: 70%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  grid-gap: 1em;
+}
+
+.item {
+  background-color: #ffffff;
+  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border: solid #afafaf;
+}
+
+.item:hover {
+  transition: 0.5s;
+  box-shadow: 19px 13px 77px -22px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 19px 13px 77px -22px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 19px 13px 77px -22px rgba(0, 0, 0, 0.67);
+}
+
+.item img,
+.item iframe,
+.item video {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+.item h2,
+.item p {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+
+img.where {
+  object-fit: cover;
+}
+/*ipad*/
+@media (max-width: 768px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
+/*phone*/
+@media (max-width: 426px) {
+  .item img {
+    height: auto;
+  }
+}
